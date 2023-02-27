@@ -82,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q9-uZ-NgK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q9-uZ-NgK">
                                 <rect key="frame" x="20" y="130" width="176" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="r2z-VD-t7X"/>
@@ -99,19 +99,32 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiB-WW-bo0">
-                                <rect key="frame" x="47" y="270" width="320" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gS-RN-CJc">
+                                <rect key="frame" x="72" y="219" width="287" height="376"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.portrait.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MiB-WW-bo0">
+                                <rect key="frame" x="22" y="158" width="392" height="512"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WS7-JC-Yap"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0gS-RN-CJc" firstAttribute="leading" secondItem="WS7-JC-Yap" secondAttribute="leading" constant="72" id="4PY-ww-z06"/>
                             <constraint firstItem="7q9-uZ-NgK" firstAttribute="leading" secondItem="qL3-QX-ptQ" secondAttribute="leadingMargin" id="6W3-Gs-FPt"/>
+                            <constraint firstItem="MiB-WW-bo0" firstAttribute="top" secondItem="WS7-JC-Yap" secondAttribute="top" constant="70" id="9C7-Yt-zxK"/>
+                            <constraint firstItem="MiB-WW-bo0" firstAttribute="trailing" secondItem="WS7-JC-Yap" secondAttribute="trailing" id="GPv-BQ-Gxz"/>
+                            <constraint firstItem="MiB-WW-bo0" firstAttribute="leading" secondItem="WS7-JC-Yap" secondAttribute="leading" constant="22" id="Gd7-yG-ko1"/>
                             <constraint firstItem="WS7-JC-Yap" firstAttribute="trailing" secondItem="7q9-uZ-NgK" secondAttribute="trailing" constant="218" id="OCm-zq-hVX"/>
                             <constraint firstItem="CuA-WH-j6y" firstAttribute="centerX" secondItem="qL3-QX-ptQ" secondAttribute="centerX" id="OWv-Uo-Ivf"/>
+                            <constraint firstItem="CuA-WH-j6y" firstAttribute="top" secondItem="0gS-RN-CJc" secondAttribute="bottom" constant="47" id="QrU-pI-zx2"/>
+                            <constraint firstItem="WS7-JC-Yap" firstAttribute="trailing" secondItem="0gS-RN-CJc" secondAttribute="trailing" constant="55" id="RL9-lf-eGU"/>
+                            <constraint firstItem="WS7-JC-Yap" firstAttribute="bottom" secondItem="MiB-WW-bo0" secondAttribute="bottom" constant="192" id="RYr-5q-z6A"/>
                             <constraint firstItem="7q9-uZ-NgK" firstAttribute="top" secondItem="WS7-JC-Yap" secondAttribute="top" constant="42" id="bWe-Ty-RIO"/>
+                            <constraint firstItem="0gS-RN-CJc" firstAttribute="top" secondItem="7q9-uZ-NgK" secondAttribute="bottom" constant="42" id="eDg-7F-hpn"/>
                             <constraint firstItem="WS7-JC-Yap" firstAttribute="bottom" secondItem="CuA-WH-j6y" secondAttribute="bottom" constant="174" id="s3A-Yj-7bY"/>
                             <constraint firstItem="CuA-WH-j6y" firstAttribute="leading" secondItem="WS7-JC-Yap" secondAttribute="leading" constant="47" id="wvM-2f-7C0"/>
                         </constraints>
@@ -153,6 +166,7 @@
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <image name="rectangle.portrait.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

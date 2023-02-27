@@ -14,6 +14,21 @@ class RoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rulesBarButton.target = self
+        rulesBarButton.action = #selector(barButtonItemTapped(_:))
+    }
+    
+        @IBAction func barButtonItemTapped(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Title", message: "Lorem ipsum dolor sit amet,consectetur adipiscing elit.Vestibulum bibendum nunc quisinterdum facilisis. Donec mattis,dui ac tincidunt aliquet, est tortorsuscipit metus, nec interdum enim ipsum at tortor. Duis malesuadapurus ornare nibh scelerisqu\n• First item\n• Second item\n• Third item", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    }
+        
 
             struct Stack<Element> {
                 private var elements: [Element] = []
@@ -50,5 +65,5 @@ class RoundsViewController: UIViewController {
     }
     */
 
-}
-}
+
+
