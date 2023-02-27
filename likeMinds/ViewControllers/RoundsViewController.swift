@@ -12,11 +12,28 @@ class RoundsViewController: UIViewController {
     @IBOutlet var categoryTitle: UILabel!
     @IBOutlet var nextButton: UIButton!
     
+    private let viewModel = GameViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         rulesBarButton.target = self
         rulesBarButton.action = #selector(barButtonItemTapped(_:))
+        
+        nextButton.addTarget(self, action: , for: <#T##UIControl.Event#>)
+        
+        displayRound(viewModel.getNextRound())
     }
+    
+    
+    
+    private func displayRound(_ round: Round) {
+        
+        // TODO actually display it
+        
+        
+    }
+    
+    
     
         @IBAction func barButtonItemTapped(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Title", message: "Lorem ipsum dolor sit amet,consectetur adipiscing elit.Vestibulum bibendum nunc quisinterdum facilisis. Donec mattis,dui ac tincidunt aliquet, est tortorsuscipit metus, nec interdum enim ipsum at tortor. Duis malesuadapurus ornare nibh scelerisqu\n• First item\n• Second item\n• Third item", preferredStyle: .alert)
@@ -29,31 +46,6 @@ class RoundsViewController: UIViewController {
     
     }
         
-
-            struct Stack<Element> {
-                private var elements: [Element] = []
-                
-                mutating func push(_ element: Element) {
-                    elements.append(element)
-                }
-                
-                mutating func pop() -> Element? {
-                    return elements.popLast()
-                }
-                
-                func peek() -> Element? {
-                    return elements.last
-                }
-                
-                var isEmpty: Bool {
-                    return elements.isEmpty
-                }
-                
-                var count: Int {
-                    return elements.count
-                }
-    }
-    
 
     /*
     // MARK: - Navigation

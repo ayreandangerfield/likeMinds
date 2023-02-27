@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2997704829AC38BD001D5B71 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997704729AC38BD001D5B71 /* Stack.swift */; };
+		2997704A29AC3920001D5B71 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997704929AC3920001D5B71 /* Round.swift */; };
+		2997704C29AC4234001D5B71 /* FirebaseSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997704B29AC4234001D5B71 /* FirebaseSource.swift */; };
 		D0538ABE29A956EC00DDE146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538ABD29A956EC00DDE146 /* AppDelegate.swift */; };
 		D0538AC029A956EC00DDE146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538ABF29A956EC00DDE146 /* SceneDelegate.swift */; };
 		D0538AC229A956EC00DDE146 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538AC129A956EC00DDE146 /* StartViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2997704729AC38BD001D5B71 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		2997704929AC3920001D5B71 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		2997704B29AC4234001D5B71 /* FirebaseSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSource.swift; sourceTree = "<group>"; };
 		D0538ABA29A956EC00DDE146 /* likeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = likeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0538ABD29A956EC00DDE146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0538ABF29A956EC00DDE146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2997704629AC388F001D5B71 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2997704729AC38BD001D5B71 /* Stack.swift */,
+				2997704929AC3920001D5B71 /* Round.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		D0538AB129A956EC00DDE146 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +75,7 @@
 		D0538ABC29A956EC00DDE146 /* likeMinds */ = {
 			isa = PBXGroup;
 			children = (
+				2997704629AC388F001D5B71 /* model */,
 				D0538AD629A9585600DDE146 /* ViewModel */,
 				D0538AD329A9580A00DDE146 /* ViewControllers */,
 				D0538ABD29A956EC00DDE146 /* AppDelegate.swift */,
@@ -85,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D0538AD429A9584B00DDE146 /* GameViewModel.swift */,
+				2997704B29AC4234001D5B71 /* FirebaseSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,9 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0538AD229A9572500DDE146 /* RoundsViewController.swift in Sources */,
+				2997704C29AC4234001D5B71 /* FirebaseSource.swift in Sources */,
 				D0538AC229A956EC00DDE146 /* StartViewController.swift in Sources */,
 				D0538ABE29A956EC00DDE146 /* AppDelegate.swift in Sources */,
 				D0538AC029A956EC00DDE146 /* SceneDelegate.swift in Sources */,
+				2997704829AC38BD001D5B71 /* Stack.swift in Sources */,
+				2997704A29AC3920001D5B71 /* Round.swift in Sources */,
 				D0538AD529A9584B00DDE146 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
