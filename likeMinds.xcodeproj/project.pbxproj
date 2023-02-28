@@ -15,6 +15,9 @@
 		D0538ACA29A956ED00DDE146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0538AC829A956ED00DDE146 /* LaunchScreen.storyboard */; };
 		D0538AD229A9572500DDE146 /* RoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538AD129A9572500DDE146 /* RoundsViewController.swift */; };
 		D0538AD529A9584B00DDE146 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538AD429A9584B00DDE146 /* GameViewModel.swift */; };
+		D0538AD929AE634C00DDE146 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538AD829AE634C00DDE146 /* Stack.swift */; };
+		D0538ADB29AE635600DDE146 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538ADA29AE635600DDE146 /* Round.swift */; };
+		D0538ADD29AE639E00DDE146 /* Firebase Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0538ADC29AE639E00DDE146 /* Firebase Source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		D0538ACB29A956ED00DDE146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0538AD129A9572500DDE146 /* RoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundsViewController.swift; sourceTree = "<group>"; };
 		D0538AD429A9584B00DDE146 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		D0538AD829AE634C00DDE146 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		D0538ADA29AE635600DDE146 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		D0538ADC29AE639E00DDE146 /* Firebase Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase Source.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		D0538ABC29A956EC00DDE146 /* likeMinds */ = {
 			isa = PBXGroup;
 			children = (
+				D0538AD729AE633C00DDE146 /* Model */,
 				D0538AD629A9585600DDE146 /* ViewModel */,
 				D0538AD329A9580A00DDE146 /* ViewControllers */,
 				D0538ABD29A956EC00DDE146 /* AppDelegate.swift */,
@@ -85,8 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				D0538AD429A9584B00DDE146 /* GameViewModel.swift */,
+				D0538ADC29AE639E00DDE146 /* Firebase Source.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D0538AD729AE633C00DDE146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0538AD829AE634C00DDE146 /* Stack.swift */,
+				D0538ADA29AE635600DDE146 /* Round.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +179,11 @@
 			files = (
 				D0538AD229A9572500DDE146 /* RoundsViewController.swift in Sources */,
 				D0538AC229A956EC00DDE146 /* StartViewController.swift in Sources */,
+				D0538ADD29AE639E00DDE146 /* Firebase Source.swift in Sources */,
 				D0538ABE29A956EC00DDE146 /* AppDelegate.swift in Sources */,
 				D0538AC029A956EC00DDE146 /* SceneDelegate.swift in Sources */,
+				D0538AD929AE634C00DDE146 /* Stack.swift in Sources */,
+				D0538ADB29AE635600DDE146 /* Round.swift in Sources */,
 				D0538AD529A9584B00DDE146 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
