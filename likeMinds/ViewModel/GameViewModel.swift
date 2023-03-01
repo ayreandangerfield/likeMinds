@@ -15,18 +15,15 @@ class GameViewModel {
     
     private let firebaseSource = FirebaseSource()
     
-    init() {
-        firebaseSource.fetchRounds { rounds in
-            // does whatevers
+    func loadRounds(_ onRoundsLoaded: () -> Void){
+        firebaseSource.fetchRounds({ returnedRounds in
             
-        }
-        
-        populateStack()
+            masterRoundsList = returnedRounds
+            onRoundsLoaded()
+            
+        })
     }
     
-    private func onRoundsFetched(_ rounds: [Round]) {
-        // does whatevers
-    }
     
     private func populateStack()  {
         roundStack.pushAll(masterRoundsList.shuffled())
